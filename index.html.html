@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Rápidos y Lujosos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background-color 1s ease;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #000, #333);
+            z-index: -2;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background: #f44336;
+            border-radius: 5px;
+        }
+
+        .spacer {
+            height: 100vh; /* Ajusta la altura según sea necesario */
+            z-index: 1;
+        }
+
+        .content {
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #f44336;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .car-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .car-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .car-card:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="vid/supra (4).mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+    <header>
+        <h1>Autos Rápidos y Lujosos</h1>
+    </header>
+    <nav>
+        <a href="index.html.html">Inicio</a>
+        <a href="modelo.html.html">Modelos</a>
+        <a href="historia.html.html">Historia</a>
+        <a href="contacto.html.html">Contacto</a>
+    </nav>
+    <div class="spacer"></div> <!-- Contenedor vacío para crear el espacio -->
+    <div class="content">
+        <div class="section">
+            <h3>Modelos Destacados</h3>
+            <div class="cars-grid">
+                <div class="car-card">
+                    <a href="pagina_del_mclaren.html"><img src="imagen/m.png" alt="McLaren P1"></a>
+                    <h4>McLaren P1</h4>
+                    <p>El McLaren P1 es un superdeportivo híbrido enchufable producido por el fabricante británico McLaren Automotive. Fue presentado en 2012 y es conocido por su impresionante diseño y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_ferrari.html"><img src="imagen/f.jpg" alt="Ferrari LaFerrari"></a>
+                    <h4>Ferrari LaFerrari</h4>
+                    <p>El Ferrari LaFerrari es un superdeportivo híbrido que combina un motor V12 con un motor eléctrico. Fue presentado en 2013 y es uno de los coches más rápidos y avanzados de Ferrari.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_bugatti.html"><img src="imagen/b.png" alt="Bugatti Chiron"></a>
+                    <h4>Bugatti Chiron</h4>
+                    <p>El Bugatti Chiron es un superdeportivo que representa lo último en rendimiento y lujo. Con un motor W16 de 8 litros, es uno de los autos más rápidos del mundo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Historia de la Velocidad</h3>
+            <p>Explora la historia de los autos más rápidos y lujosos, desde los primeros superdeportivos hasta las maravillas tecnológicas de hoy en día.</p>
+        </div>
+        <!-- Nueva sección con video -->
+        <div class="section">
+            <h3>Musica  </h3>
+            <video controls width="100%">
+                <source src="vid/harry.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Autos Rápidos y Lujosos. Todos los derechos reservados - Giancarlo.A.R.Y .</p>
+    </footer>
+    <canvas id="color-canvas" style="display: none;"></canvas>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('background-video');
+            const canvas = document.getElementById('color-canvas');
+            const ctx = canvas.getContext('2d');
+            const body = document.body;
+
+            function updateBackgroundColor() {
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                const frame = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                let r = 0, g = 0, b = 0;
+
+                for (let i = 0; i < frame.data.length; i += 4) {
+                    r += frame.data[i];
+                    g += frame.data[i + 1];
+                    b += frame.data[i + 2];
+                }
+
+                r = Math.floor(r / (frame.data.length / 4));
+                g = Math.floor(g / (frame.data.length / 4));
+                b = Math.floor(b / (frame.data.length / 4));
+
+                body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            }
+
+            video.addEventListener('play', function() {
+                setInterval(updateBackgroundColor, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Autos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: linear-gradient(45deg, #000, #333);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background: #f44336;
+            border-radius: 5px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #f44336;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        #search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #search-bar {
+            padding: 10px;
+            width: 50%;
+            font-size: 1.2em;
+        }
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .car-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .car-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .car-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .car-card h4 {
+            margin: 10px 0;
+        }
+
+        .car-card p {
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modelos de Autos</h1>
+    </header>
+    <nav>
+        <a href="index.html.html">Inicio</a>
+        <a href="modelo.html.html">Modelos</a>
+        <a href="historia.html.html">Historia</a>
+        <a href="contacto.html.html">Contacto</a>
+    </nav>
+    <div class="content">
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Buscar modelos de autos...">
+        </div>
+        <div class="section">
+            <h3>Modelos Destacados</h3>
+            <div class="cars-grid">
+                <!-- Modelos originales -->
+                <div class="car-card">
+                    <a href="pagina_del_mclaren.html"><img class="car-img" src="imagen/m.png"  data-sound="musica/musica McLaren.mp3.mp3"  alt="McLaren P1"></a>
+                    <h4>McLaren P1</h4>
+                    <p>El McLaren P1 es un superdeportivo híbrido enchufable producido por el fabricante británico McLaren Automotive. Fue presentado en 2012 y es conocido por su impresionante diseño y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_ferrari.html"><img class="car-img" src="imagen/f.jpg" alt="Ferrari LaFerrari" data-sound="musica/fer.mp3"></a>
+                    <h4>Ferrari LaFerrari</h4>
+                    <p>El Ferrari LaFerrari es un superdeportivo híbrido que combina un motor V12 con un motor eléctrico. Fue presentado en 2013 y es uno de los coches más rápidos y avanzados de Ferrari.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_bugatti.html"><img class="car-img" src="imagen/b.png" alt="Bugatti Chiron" data-sound="musica/b.mp3"></a>
+                    <h4>Bugatti Chiron</h4>
+                    <p>El Bugatti Chiron es un superdeportivo que representa lo último en rendimiento y lujo. Con un motor W16 de 8 litros, es uno de los autos más rápidos del mundo.</p>
+                </div>
+        
+                <!-- Nuevos modelos -->
+                <div class="car-card">
+                    <a href="pagina_del_porsche.html"><img class="car-img" src="imagen/porch.jpeg" alt="Porsche 918 Spyder" data-sound="musica/p.mp3"></a>
+                    <h4>Porsche 918 Spyder</h4>
+                    <p>El Porsche 918 Spyder es un superdeportivo híbrido que combina un motor V8 con dos motores eléctricos. Ofrece un rendimiento excepcional y es uno de los coches más avanzados tecnológicamente.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_lamborghini.html"><img class="car-img" src="imagen/lambor.gif" alt="Lamborghini Aventador" data-sound="musica/lamborghini.mp3"></a>
+                    <h4>Lamborghini Aventador</h4>
+                    <p>El Lamborghini Aventador es un superdeportivo con un motor V12 que destaca por su diseño agresivo y su rendimiento en carretera.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_astral.html"><img class="car-img" src="imagen/aston.webp" alt="Aston Martin Valkyrie" data-sound="musica/aston.mp3"></a>
+                    <h4>Aston Martin Valkyrie</h4>
+                    <p>El Aston Martin Valkyrie es un hiperauto con un motor V12 y tecnología derivada de la Fórmula 1, diseñado para ofrecer una experiencia de conducción única.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_cybertruck.html"><img class="car-img" src="imagen/cyber.jpg" alt="Tesla Cybertruck" data-sound="musica/cybertruck.mp3"></a>
+                    <h4>Tesla Cybertruck</h4>
+                    <p>El Tesla Cybertruck es una camioneta eléctrica con un diseño futurista y una impresionante autonomía, que marca un cambio radical en el mercado de vehículos eléctricos.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_maserati.html"><img class="car-img" src="imagen/maserati.jpeg" alt="Maserati MC20" data-sound="musica/maserati.mp3"></a>
+                    <h4>Maserati MC20</h4>
+                    <p>El Maserati MC20 es un superdeportivo con un motor V6 biturbo y un diseño elegante, destacando por su combinación de lujo y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_ford.html"><img class="car-img" src="imagen/ford mustang.webp" alt="Ford GT" data-sound="musica/ford.mp3"></a>
+                    <h4>Ford GT</h4>
+                    <p>El Ford GT es un superdeportivo que rinde homenaje al icónico GT40 de los años 60, con un motor V6 biturbo y un diseño aerodinámico.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_koenigsegg.html"><img class="car-img" src="imagen/ñoegniseg.jpeg" alt="Koenigsegg Agera RS" data-sound="musica/koenigsegg.mp3"></a>
+                    <h4>Koenigsegg Agera RS</h4>
+                    <p>El Koenigsegg Agera RS es conocido por ser uno de los coches más rápidos del mundo, con un motor V8 biturbo y un diseño extremo.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_renault.html"><img class="car-img" src="imagen/renaul.jpg" alt="Renault Alpine A110" data-sound="musica/renault.mp3"></a>
+                    <h4>Renault Alpine A110</h4>
+                    <p>El Renault Alpine A110 es un deportivo compacto con un motor turboalimentado, que combina agilidad y estilo en un paquete elegante.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_jaguar.html"><img class="car-img" src="imagen/jaguar.jpg" alt="Jaguar C-X75" data-sound="musica/jaguar.mp3"></a>
+                    <h4>Jaguar C-X75</h4>
+                    <p>El Jaguar C-X75 es un superdeportivo híbrido con un diseño innovador y un motor potente, desarrollado para ofrecer una experiencia de conducción única.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_bmw.html"><img class="car-img" src="imagen/bmw.jpg" alt="BMW i8" data-sound="musica/bmw.mp3"></a>
+                    <h4>BMW i8</h4>
+                    <p>El BMW i8 es un deportivo híbrido que combina un motor de gasolina con motores eléctricos, ofreciendo un rendimiento emocionante y una eficiencia energética.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_honda.html"><img class="car-img" src="imagen/honda.jpeg" alt="Honda NSX" data-sound="musica/honda.mp3"></a>
+                    <h4>Honda NSX</h4>
+                    <p>El Honda NSX es un superdeportivo híbrido que ofrece un equilibrio perfecto entre potencia y confort, con un motor V6 y tecnología avanzada.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_acura.html"><img class="car-img" src="imagen/acura.jpg" alt="Acura NSX Type S" data-sound="musica/acura.mp3"></a>
+                    <h4>Acura NSX Type S</h4>
+                    <p>El Acura NSX Type S es una versión mejorada del NSX, con un motor V6 biturbo y un enfoque en el rendimiento de alta gama.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_audi.html"><img class="car-img" src="imagen/audi.webp" alt="Audi R8" data-sound="musica/audi.mp3"></a>
+                    <h4>Audi R8</h4>
+                    <p>El Audi R8 es un superdeportivo con un motor V10 y un diseño deportivo, conocido por su rendimiento y elegancia en la carretera.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_mercedes.html"><img class="car-img" src="imagen/mercedes.jpeg" alt="Mercedes-AMG GT" data-sound="musica/mercedes.mp3"></a>
+                    <h4>Mercedes-AMG GT</h4>
+                    <p>El Mercedes-AMG GT es un deportivo con un motor V8 biturbo, ofreciendo una combinación de lujo y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_lexus.html"><img class="car-img" src="imagen/lexus.jpeg" alt="Lexus LFA" data-sound="musica/lexus.mp3"></a>
+                    <h4>Lexus LFA</h4>
+                    <p>El Lexus LFA es un superdeportivo con un motor V10 y una ingeniería de precisión, destacando por su diseño y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_italdesign.html"><img class="car-img" src="imagen/italde.webp" alt="Italdesign Zerouno" data-sound="musica/italdesign.mp3"></a>
+                    <h4>Italdesign Zerouno</h4>
+                    <p>El Italdesign Zerouno es un superdeportivo italiano con un diseño exclusivo y un motor V10, ofreciendo una experiencia de conducción única.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_shelby.html"><img class="car-img" src="imagen/shelby.jpeg" alt="Shelby GT500" data-sound="musica/shelby.mp3"></a>
+                    <h4>Shelby GT500</h4>
+                    <p>El Shelby GT500 es un muscle car con un motor V8 que ofrece una experiencia de conducción potente y emocionante.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Autos Rápidos y Lujosos. Todos los derechos reservados - Giancarlo.A.R.Y .</p>
+    </footer>
+
+    <!-- Elemento para reproducir sonidos -->
+    <audio id="hover-sound"></audio>
+
+    <!-- JavaScript para manejar la reproducción de sonido -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hoverSound = document.getElementById('hover-sound');
+            const carImages = document.querySelectorAll('.car-img');
+            const searchBar = document.getElementById('search-bar');
+            const carsGrid = document.querySelector('.cars-grid');
+            const carCards = carsGrid.getElementsByClassName('car-card');
+
+            carImages.forEach(img => {
+                img.addEventListener('mouseover', function() {
+                    const soundPath = img.getAttribute('data-sound');
+                    if (soundPath) {
+                        hoverSound.src = soundPath;
+                        hoverSound.currentTime = 0;
+                        hoverSound.play();
+                    }
+                });
+
+                img.addEventListener('mouseout', function() {
+                    hoverSound.pause();
+                    hoverSound.currentTime = 0;
+                });
+            });
+
+            // Filtrado de los modelos de autos
+            searchBar.addEventListener('input', function() {
+                const filter = searchBar.value.toLowerCase();
+                for (let i = 0; i < carCards.length; i++) {
+                    const carCard = carCards[i];
+                    const carTitle = carCard.querySelector('h4').textContent.toLowerCase();
+                    if (carTitle.includes(filter)) {
+                        carCard.style.display = "";
+                    } else {
+                        carCard.style.display = "none";
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

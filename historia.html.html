@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Rápidos y Lujosos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: linear-gradient(45deg, #000, #333);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background: #f44336;
+            border-radius: 5px;
+        }
+
+        .hero {
+            position: relative;
+            height: 500px;
+            background: url(imagen/h.png) no-repeat center center/cover;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero h2 {
+            font-size: 4em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #f44336;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .car-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .car-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .car-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .car-card h4 {
+            margin: 10px 0;
+        }
+
+        .car-card p {
+            font-size: 0.9em;
+        }
+
+        .car-history {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .car-history h4 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .car-history p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Autos Rápidos y Lujosos</h1>
+    </header>
+    <nav>
+        <a href="index.html.html">Inicio</a>
+        <a href="modelo.html.html">Modelos</a>
+        <a href="historia.html.html">Historia</a>
+        <a href="contacto.html.html">Contacto</a>
+    </nav>
+    <div class="hero">
+        <h2>Historia de los Autos</h2>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h3>Modelos Destacados</h3>
+            <div class="cars-grid">
+                <div class="car-card">
+                    <a href="pagina_del_mclaren.html"><img src="imagen/m.png" alt="McLaren P1"></a>
+                    <h4>McLaren P1</h4>
+                    <p>El McLaren P1 es un superdeportivo híbrido enchufable producido por el fabricante británico McLaren Automotive. Fue presentado en 2012 y es conocido por su impresionante diseño y rendimiento.</p>
+                    <div class="car-history">
+                        <h4>Historia del McLaren P1</h4>
+                        <p>El McLaren P1 se desarrolló como un sucesor del McLaren F1, con un enfoque en la tecnología híbrida. Su motor V8 biturbo combinado con un motor eléctrico ofrece un rendimiento excepcional y un diseño aerodinámico innovador.</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_ferrari.html"><img src="imagen/f.jpg" alt="Ferrari LaFerrari"></a>
+                    <h4>Ferrari LaFerrari</h4>
+                    <p>El Ferrari LaFerrari es un superdeportivo híbrido que combina un motor V12 con un motor eléctrico. Fue presentado en 2013 y es uno de los coches más rápidos y avanzados de Ferrari.</p>
+                    <div class="car-history">
+                        <h4>Historia del Ferrari LaFerrari</h4>
+                        <p>El Ferrari LaFerrari, también conocido como Ferrari F70, fue creado para marcar el pináculo de la tecnología de Ferrari en el momento de su lanzamiento. Su motor V12 se combina con un motor eléctrico para ofrecer una experiencia de conducción inigualable.</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_bugatti.html"><img src="imagen/b.png" alt="Bugatti Chiron"></a>
+                    <h4>Bugatti Chiron</h4>
+                    <p>El Bugatti Chiron es un superdeportivo que representa lo último en rendimiento y lujo. Con un motor W16 de 8 litros, es uno de los autos más rápidos del mundo.</p>
+                    <div class="car-history">
+                        <h4>Historia del Bugatti Chiron</h4>
+                        <p>El Bugatti Chiron fue desarrollado para superar a su predecesor, el Bugatti Veyron. Con un motor W16 quad-turboalimentado, el Chiron no solo es un auto de alto rendimiento, sino también un símbolo de lujo extremo.</p>
+                    </div>
+                </div>
+                <!-- Nuevos modelos -->
+                <div class="car-card">
+                    <a href="pagina_del_porsche.html"><img src="imagen/porch.jpeg" alt="Porsche 918 Spyder" data-sound="musica/porsche.mp3"></a>
+                    <h4>Porsche 918 Spyder</h4>
+                    <p>El Porsche 918 Spyder es un superdeportivo híbrido que combina un motor V8 con dos motores eléctricos. Ofrece un rendimiento excepcional y es uno de los coches más avanzados tecnológicamente.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Porsche 918 Spyder fue presentado como un prototipo en el Salón del Automóvil de Ginebra en 2010 y se convirtió en un vehículo de producción en 2013. Este superdeportivo híbrido fue creado para mostrar la tecnología avanzada de Porsche, combinando un motor V8 de 4.6 litros con dos motores eléctricos para proporcionar un rendimiento impresionante y eficiencia.</p>
+                        <h5>Características</h5>
+                        <p>Motor V8 de 4.6 litros y dos motores eléctricos, potencia combinada de 887 CV, velocidad máxima de 345 km/h, aceleración de 0 a 100 km/h en 2.6 segundos.</p>
+                    </div>
+                </div>
+        
+                <div class="car-card">
+                    <a href="pagina_del_lamborghini.html"><img src="imagen/lambo.jpeg" alt="Lamborghini Aventador" data-sound="musica/lamborghini.mp3"></a>
+                    <h4>Lamborghini Aventador</h4>
+                    <p>El Lamborghini Aventador es un superdeportivo con un motor V12 que destaca por su diseño agresivo y su rendimiento en carretera.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Lamborghini Aventador fue presentado en el Salón del Automóvil de Ginebra en 2011 como el sucesor del Lamborghini Murciélago. Nombrado en honor a un toro de lidia legendario, el Aventador ha sido el buque insignia de Lamborghini, destacándose por su diseño agresivo y rendimiento excepcional.</p>
+                        <h5>Características</h5>
+                        <p>Motor V12 de 6.5 litros, potencia de 730 CV, velocidad máxima de 350 km/h, aceleración de 0 a 100 km/h en 2.9 segundos.</p>
+                    </div>
+                </div>
+        
+                <div class="car-card">
+                    <a href="pagina_del_astral.html"><img src="imagen/aston.webp" alt="Aston Martin Valkyrie" data-sound="musica/aston.mp3"></a>
+                    <h4>Aston Martin Valkyrie</h4>
+                    <p>El Aston Martin Valkyrie es un hiperauto con un motor V12 y tecnología derivada de la Fórmula 1, diseñado para ofrecer una experiencia de conducción única.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Aston Martin Valkyrie fue desarrollado en colaboración con Red Bull Racing y es uno de los hiperautos más avanzados del mundo. Fue presentado en 2017 y combina tecnología de Fórmula 1 con un diseño futurista.</p>
+                        <h5>Características</h5>
+                        <p>Motor V12 de 6.5 litros desarrollado por Cosworth, potencia de 1,160 CV, velocidad máxima de más de 350 km/h, chasis de fibra de carbono.</p>
+                    </div>
+                </div>
+        
+                <div class="car-card">
+                    <a href="pagina_del_cybertruck.html"><img src="imagen/cyber.jpg" alt="Tesla Cybertruck" data-sound="musica/cybertruck.mp3"></a>
+                    <h4>Tesla Cybertruck</h4>
+                    <p>El Tesla Cybertruck es una camioneta eléctrica con un diseño futurista y una impresionante autonomía, que marca un cambio radical en el mercado de vehículos eléctricos.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Tesla Cybertruck fue presentado en noviembre de 2019 y rompió con el diseño convencional de las camionetas. Con su apariencia futurista y características innovadoras, Tesla busca revolucionar el mercado de los vehículos eléctricos.</p>
+                        <h5>Características</h5>
+                        <p>Carrocería de acero inoxidable, autonomía de hasta 800 km, aceleración de 0 a 100 km/h en aproximadamente 2.9 segundos, capacidad de carga y remolque impresionante.</p>
+                    </div>
+                </div>
+        
+                <div class="car-card">
+                    <a href="pagina_del_maserati.html"><img src="imagen/maserati.jpeg" alt="Maserati MC20" data-sound="musica/maserati.mp3"></a>
+                    <h4>Maserati MC20</h4>
+                    <p>El Maserati MC20 es un superdeportivo con un motor V6 biturbo y un diseño elegante, destacando por su combinación de lujo y rendimiento.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Maserati MC20 fue presentado en 2020, marcando el regreso de Maserati al segmento de los superdeportivos después de más de una década. Este modelo está diseñado para competir con los mejores superdeportivos del mundo y simboliza una nueva era para la marca.</p>
+                        <h5>Características</h5>
+                        <p>Motor V6 biturbo de 3.0 litros, potencia de 630 CV, velocidad máxima de 325 km/h, aceleración de 0 a 100 km/h en 2.9 segundos.</p>
+                    </div>
+                </div>
+        
+                <div class="car-card">
+                    <a href="pagina_del_ford.html"><img src="imagen/ford mustang.webp" alt="Ford GT" data-sound="musica/ford.mp3"></a>
+                    <h4>Ford GT</h4>
+                    <p>El Ford GT es un superdeportivo que rinde homenaje al icónico GT40 de los años 60, con un motor V6 biturbo y un diseño aerodinámico.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Ford GT original ganó las 24 Horas de Le Mans en los años 60, y el modelo moderno fue lanzado en 2016 para conmemorar el 50 aniversario de esa victoria. Este coche encarna la herencia de carreras de Ford y su compromiso con el rendimiento y la innovación.</p>
+                        <h5>Características</h5>
+                        <p>Motor V6 biturbo de 3.5 litros, potencia de 647 CV, velocidad máxima de 347 km/h, chasis de fibra de carbono, aerodinámica activa.</p>
+                    </div>
+                </div>
+        
+                <div class="car-card">
+                    <a href="pagina_del_koenigsegg.html"><img src="imagen/ñoegniseg.jpeg" alt="Koenigsegg Agera RS" data-sound="musica/koenigsegg.mp3"></a>
+                    <h4>Koenigsegg Agera RS</h4>
+                    <p>El Koenigsegg Agera RS es conocido por ser uno de los coches más rápidos del mundo, con un motor V8 biturbo y un diseño extremo.</p>
+                    <div class="car-history">
+                        <h5>Historia</h5>
+                        <p>El Koenigsegg Agera RS fue lanzado en 2015 y rápidamente estableció récords de velocidad, incluyendo la velocidad máxima más alta registrada para un coche de producción en 2017. Este modelo combina tecnología avanzada con un enfoque en el rendimiento extremo.</p>
+                        <h5>Características</h5>
+                        <p>Motor V8 biturbo de 5.0 litros, potencia de 1,341 CV, velocidad máxima de 447 km/h, aceleración de 0 a 100 km/h en 2.8 segundos.</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_renault.html"><img src="imagen/renaul.jpg" alt="Renault Alpine A110" data-sound="musica/renault.mp3"></a>
+                    <h4>Renault Alpine A110</h4>
+                    <p>El Renault Alpine A110 es un deportivo compacto con un motor turboalimentado, que combina agilidad y estilo en un paquete elegante.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_jaguar.html"><img src="imagen/jaguar.jpg" alt="Jaguar C-X75" data-sound="musica/jaguar.mp3"></a>
+                    <h4>Jaguar C-X75</h4>
+                    <p>El Jaguar C-X75 es un superdeportivo híbrido con un diseño innovador y un motor potente, desarrollado para ofrecer una experiencia de conducción única.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_bmw.html"><img src="imagen/bmw.jpg" alt="BMW i8" data-sound="musica/bmw.mp3"></a>
+                    <h4>BMW i8</h4>
+                    <p>El BMW i8 es un deportivo híbrido que combina un motor de gasolina con motores eléctricos, ofreciendo un rendimiento emocionante y una eficiencia energética.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_honda.html"><img src="imagen/honda.jpeg" alt="Honda NSX" data-sound="musica/honda.mp3"></a>
+                    <h4>Honda NSX</h4>
+                    <p>El Honda NSX es un superdeportivo híbrido que ofrece un equilibrio perfecto entre potencia y confort, con un motor V6 y tecnología avanzada.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_acura.html"><img src="imagen/acura.jpg" alt="Acura NSX Type S" data-sound="musica/acura.mp3"></a>
+                    <h4>Acura NSX Type S</h4>
+                    <p>El Acura NSX Type S es una versión mejorada del NSX, con un motor V6 biturbo y un enfoque en el rendimiento de alta gama.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_audi.html"><img src="imagen/audi.webp" alt="Audi R8" data-sound="musica/audi.mp3"></a>
+                    <h4>Audi R8</h4>
+                    <p>El Audi R8 es un superdeportivo con un motor V10 y un diseño deportivo, conocido por su rendimiento y elegancia en la carretera.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_mercedes.html"><img src="imagen/mercedes.jpeg" alt="Mercedes-AMG GT" data-sound="musica/mercedes.mp3"></a>
+                    <h4>Mercedes-AMG GT</h4>
+                    <p>El Mercedes-AMG GT es un deportivo con un motor V8 biturbo, ofreciendo una combinación de lujo y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_lexus.html"><img src="imagen/lexus.jpeg" alt="Lexus LFA" data-sound="musica/lexus.mp3"></a>
+                    <h4>Lexus LFA</h4>
+                    <p>El Lexus LFA es un superdeportivo con un motor V10 y una ingeniería de precisión, destacando por su diseño y rendimiento.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_italdesign.html"><img src="imagen/italde.webp" alt="Italdesign Zerouno" data-sound="musica/italdesign.mp3"></a>
+                    <h4>Italdesign Zerouno</h4>
+                    <p>El Italdesign Zerouno es un superdeportivo italiano con un diseño exclusivo y un motor V10, ofreciendo una experiencia de conducción única.</p>
+                </div>
+                <div class="car-card">
+                    <a href="pagina_del_shelby.html"><img src="imagen/shelby.jpeg" alt="Shelby GT500" data-sound="musica/shelby.mp3"></a>
+                    <h4>Shelby GT500</h4>
+                    <p>El Shelby GT500 es un muscle car con un motor V8 que ofrece una experiencia de conducción potente y emocionante.</p>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Historia de la Velocidad</h3>
+            <p>Explora la historia de los autos más rápidos y lujosos, desde los primeros superdeportivos hasta las maravillas tecnológicas de hoy en día.</p>
+        </div>
+        <!-- Nueva sección con video -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Autos Rápidos y Lujosos. Todos los derechos reservados - Giancarlo.A.R.Y .</p>
+    </footer>
+</body>
+</html>
